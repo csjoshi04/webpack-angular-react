@@ -34,6 +34,22 @@ const moduleConfig = {
 
                 generatedIndexHTMLFile : "gen.angular2app.index.html",
                 indexHTMLTemplateFileLocation : path.join(appBasePath, "angular2app", "angular2app.index.html")
+            },
+            {
+                generatedIndexJSName : "gen.reactapp.index",
+                indexJSLocation : path.join(appBasePath, "reactapp", "reactapp.index.js"),
+
+                generatedIndexCSSName : "gen.reactapp.style",
+                cssFiles : [path.join(appBasePath, "reactapp", "styles", "reactapp.style.css")],
+
+                generatedVendorJSName : "gen.reactapp.jsvendor",
+                jsVendors : path.join(appBasePath, "reactapp", "reactapp.jsvendor.js"),
+
+                generatedVendorCSSName : "gen.reactapp.css.vendor",
+                vendorCSSFiles : [path.join(projectBasePath, "node_modules", "bootstrap", "dist", "css", "bootstrap.css")],
+
+                generatedIndexHTMLFile : "gen.reactapp.index.html",
+                indexHTMLTemplateFileLocation : path.join(appBasePath, "reactapp", "reactapp.index.html")
             }
         ]
     }
