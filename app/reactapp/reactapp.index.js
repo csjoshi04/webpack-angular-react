@@ -1,11 +1,12 @@
 import ReactDOM from 'react-dom'
 import React from 'react';
+import {HelloComponent} from "./component/hello.component";
 
 export class ReactAppMainComponent extends React.Component{
     render(){
         return(
-            <div style={{'color':'red'}}>
-                Hello React
+            <div>
+                <HelloComponent/>
             </div>
         )
     }
