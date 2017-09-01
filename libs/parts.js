@@ -113,10 +113,17 @@ exports.getJquery = function () {
     })
 }
 
-exports.tsAndAngularTemplateLoader = function(){
+exports.tsLoader = function(){
     return{
         test: /\.ts$/,
-        loaders: ['awesome-typescript-loader','angular2-template-loader']
+        loaders: ['awesome-typescript-loader']
+    }
+}
+
+exports.angularTemplateLoader = function(){
+    return{
+        test: /\.ts$/,
+        loaders: ['angular2-template-loader']
     }
 }
 

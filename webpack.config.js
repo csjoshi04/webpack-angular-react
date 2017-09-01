@@ -127,8 +127,7 @@ for (var i = 0; i < modules.length; i++) {
     common.plugins.push(parts.createExtractedCSSFile());
     common.plugins.push(parts.getJquery());
     common.module.loaders = extractCSSLoaders;
-    common.module.loaders.push(parts.tsAndAngularTemplateLoader());
-    common.module.loaders.push(parts.rawLoaderForNg2Templates());
+    common.module.loaders.push(parts.tsLoader());
     common.module.loaders.push(parts.urlLoaderForImagesAndFontAwesome());
     common.module.loaders.push(parts.fileLoaderForOtherMediaTypes());
     exportsArray.push(common);
